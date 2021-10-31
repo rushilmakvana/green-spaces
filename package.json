@@ -1,0 +1,29 @@
+{
+  "name": "greenspaces",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Lamerous",
+  "license": "ISC",
+  "dependencies": {
+    "@auth0/auth0-react": "^1.8.0",
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.7",
+    "multer": "^1.4.3",
+    "react": "^17.0.2",
+    "react-bootstrap-validation": "^0.1.11",
+    "twilio": "^3.68.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
